@@ -12,5 +12,6 @@ namespace Spiderman.Domain
         public string Name { get; set; }
         public string Description { get; set; }
         public string FileLocation { get; set; }
+        public List<Category> Categories { get; set; } = [];
     }
 }

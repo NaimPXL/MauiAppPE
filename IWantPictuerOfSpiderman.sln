@@ -1,15 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37216.2 d17.14
+VisualStudioVersion = 17.14.37216.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spiderman.Application", "Spiderman.Application\Spiderman.Application.csproj", "{7D21C008-A005-4B38-9F7F-0435BFBD9001}"
+	ProjectSection(ProjectDependencies) = postProject
+		{210E849B-736E-40C1-8FE1-F216DFE5E19C} = {210E849B-736E-40C1-8FE1-F216DFE5E19C}
+		{A7C2F96F-DB07-470F-AA9D-2B9E6424DC18} = {A7C2F96F-DB07-470F-AA9D-2B9E6424DC18}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spiderman.Domain", "Spiderman.Domain\Spiderman.Domain.csproj", "{210E849B-736E-40C1-8FE1-F216DFE5E19C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spiderman.Infrastructure", "Spiderman.Infrastructure\Spiderman.Infrastructure.csproj", "{A7C2F96F-DB07-470F-AA9D-2B9E6424DC18}"
+	ProjectSection(ProjectDependencies) = postProject
+		{210E849B-736E-40C1-8FE1-F216DFE5E19C} = {210E849B-736E-40C1-8FE1-F216DFE5E19C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spiderman.WebApi", "Spiderman.WebApi\Spiderman.WebApi.csproj", "{E3CFEE3A-4E73-47C5-A591-32DBC0C7D208}"
+	ProjectSection(ProjectDependencies) = postProject
+		{210E849B-736E-40C1-8FE1-F216DFE5E19C} = {210E849B-736E-40C1-8FE1-F216DFE5E19C}
+		{7D21C008-A005-4B38-9F7F-0435BFBD9001} = {7D21C008-A005-4B38-9F7F-0435BFBD9001}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
