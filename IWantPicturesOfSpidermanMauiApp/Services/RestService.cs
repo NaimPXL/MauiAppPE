@@ -9,7 +9,7 @@ namespace IWantPicturesOfSpidermanMauiApp.Services
 {
     public class RestService
     {
-        private const string REST_URL = "https://mrddxzw3-7006.euw.devtunnels.ms/";
+        private const string REST_URL = "https://kw938rwh-7006.euw.devtunnels.ms";
 
         private readonly HttpClient _httpClient;
 
@@ -24,7 +24,7 @@ namespace IWantPicturesOfSpidermanMauiApp.Services
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
-                return System.Text.Json.JsonSerializer.Deserialize<List<PictureDTO>>(content);
+                return System.Text.Json.JsonSerializer.Deserialize<List<PictureDTO>>(content, new System.Text.Json.JsonSerializerOptions() { PropertyNameCaseInsensitive = true});
             }
             else
             {
